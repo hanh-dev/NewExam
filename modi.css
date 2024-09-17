@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Đảm bảo các phần tử bên trong header được căn giữa theo chiều dọc */
+    width: 100%;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    align-items: center;
+}
+
+h3 {
+    font-size: 28px;
+    color: #fff;
+}
+
+ul li {
+    font-size: 18px;
+    color: #fff;
+}
+
+input {
+    padding: 4px 8px;
+    outline: none;
+}
+.table-clothes{
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid hwb(0 0% 80%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 16px;
+    border-radius: 15px;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 30px;
+}
+label{
+    color: #fff;
+    width: 150px;
+    flex: 1;
+}
+span{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 400px;
+    outline: none;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #24272c;
+    color: #fff;
+}
+.content{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.content-form{
+    border: 1px solid hwb(0 0% 80%);
+    border-radius: 5px;
+    padding: 10px;
+    height: 350px;
+}
+.content-card{
+    border: 1px solid hwb(0 0% 80%);
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+}
+.content-card_product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card-hold {
+    border: 1px solid hwb(0 0% 80%);
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card-hold img {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng của card */
+    height: auto; /* Đảm bảo tỷ lệ của ảnh không bị bóp méo */
+    display: block; /* Loại bỏ khoảng trắng giữa các phần tử inline */
+}
+
+.card-body {
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    padding: 10px;
+}
+
+button.card-buy {
+    margin: 10px 0;
+    padding: 8px 16px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.price{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #fff;
+    justify-content: space-between;
+}
+li{
+    position: relative;
+    cursor: pointer;
+}
+li::after {
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    width: 0%;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+li:hover::after {
+    width: 100%;
+}
+/* Footer */
+/* Set để không xảy ra những tình huống không mong muốn */
+/* Set độ dài cho cái bao phủ footer */
+.footer{
+    background-color: #111111;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+/* Lấy hết độ dài của footer */
+.icon{
+    width: 100%;
+}
+/* Lấy hết độ dài của icon */
+.icon-list{
+    width: 100%;
+}
+/* Chỉnh ul vào giữa màn hình */
+.icon-list{ 
+    display: flex;
+    list-style: none;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    margin-top: 100px;
+}
+.wrap-icon{
+    padding: 10px;
+    background-color: #fdfdfd;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+.icon-padd{
+    color: #191919;
+}
+/* Cho navigation */
+.nav-list{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.nav-item{
+    color: #fdfdfd;
+}
+/* Phần bản quyền */
+.foot-text{
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    position:absolute;
+    bottom: 0;
+}
+.foot-copyRight{
+    margin-top: 10px;
+    color:#fdfdfd;
+    text-align: center;
+}
+.nav-last-wrapp{
+    margin-top: 50px;
+    display: flex;
+}
+.content-card-female{
+    display: none;
+}

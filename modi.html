@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./modi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>Shop Debugs</h3>
+            <ul class="list-nav">
+                <li>Trang Chủ</li>
+                <li onclick="fashionMale()" id="male">Thời Trang Nam</li>
+                <li onclick="fashionFemale()" id="female">Thời Trang Nữ</li>
+                <li>Tin Tức</li>
+            </ul>
+            <input type="text" placeholder="Tìm kiếm">
+        </header>
+        <div class="category-selection">
+            <button id="mensFashion">Thời Trang Nam</button>
+            <button id="womensFashion">Thời Trang Nữ</button>
+        </div>
+        <div class="content">
+            <div class="content-form">
+                <h2>FORM</h2>
+                <span>
+                    <label for="productImage">Product Image</label>
+                    <input type="file" id="productImage">
+                </span>
+                <span>
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName" placeholder="Name of product">
+                </span>
+                <span>
+                    <label for="productType">Product Type</label>
+                    <input type="text" id="productType" placeholder="Type of product">
+                </span>
+                <span>
+                    <label for="productNewPrice">Product New Price</label>
+                    <input type="number" id="productNewPrice" placeholder="New Price of product">
+                </span>
+                          <span>
+                    <label for="productOldPrice">Product Old Price</label>
+                    <input type="number" id="productOldPrice" placeholder="Old Price of product">
+                </span>
+                <span>
+                    <button id="findItem">FIND</button>
+                </span>
+            </div>
+            <div class="content-card">
+                <div class="content-card-male" id="mensFashionContent">
+                    <h2>Thời Trang Nam</h2>
+                    <div class="content-card_product">
+                        <div class="card-hold">
+                            <img src="./images/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" alt="">
+                            <div class="card-body">
+                                <span class="card-name">Quần jean nam - </span>
+                                <span class="card-type">KO0001</span>
+                            </div>
+                            <div class="price">
+                                <span class="newPrice">260.000VND</span>
+                                <span class="oldPrice">170.000VND</span>
+                            </div>
+                            <button class="card-buy">Đặt Mua</button>
+                        </div>
+                        <div class="card-hold">
+                            <img src="./images/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" alt="">
+                            <div class="card-body">
+                                <span class="card-name">Quần jean nữ - </span>
+                                <span class="card-type">KO0002</span>
+                            </div>
+                            <div class="price">
+                                <span class="newPrice">240.000VND</span>
+                                <span class="oldPrice">170.000VND</span>
+                            </div>
+                            <button class="card-buy">Đặt Mua</button>
+                        </div>
+                        <div class="card-hold">
+                            <img src="./images/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" alt="">
+                            <div class="card-body">
+                                <span class="card-name">Quần jean nữ - </span>
+                                <span class="card-type">KO0003</span>
+                            </div>
+                            <div class="price">
+                                <span class="newPrice">160.000VND</span>
+                                <span class="oldPrice">170.000VND</span>
+                            </div>
+                            <button class="card-buy">Đặt Mua</button>
+                        </div>
+                        <div class="card-hold">
+                            <img src="./images/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" alt="">
+                            <div class="card-body">
+                                <span class="card-name">Quần jean nữ - </span>
+                                <span class="card-type">KO0004</span>
+                            </div>
+                            <div class="price">
+                                <span class="newPrice">60.000VND</span>
+                                <span class="oldPrice">170.000VND</span>
+                            </div>
+                            <button class="card-buy">Đặt Mua</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card-female" id="womensFashionContent">
+                    <h2>Thời Trang Nữ</h2>
+                    <div class="content-card_product">
+                        <div class="card-hold">
+                            <img src="./images/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" alt="">
+                            <div class="card-body">
+                                <span class="card-name">Quần jean nữ - </span>
+                                <span class="card-type">KO0001</span>
+                            </div>
+                            <div class="price">
+                                <span class="newPrice">260.000VND</span>
+                                <span class="oldPrice">170.000VND</span>
+                            </div>
+                            <button class="card-buy">Đặt Mua</button>
+                        </div>
+                        <div class="card-hold">
+                            <img src="./images/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" alt="">
+                            <div class="card-body">
+                                <span class="card-name">Quần jean nữ - </span>
+                                <span class="card-type">KO0002</span>
+                            </div>
+                            <div class="price">
+                                <span class="newPrice">240.000VND</span>
+                                <span class="oldPrice">170.000VND</span>
+                            </div>
+                            <button class="card-buy">Đặt Mua</button>
+                        </div>
+                        <div class="card-hold">
+                            <img src="./images/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" alt="">
+                            <div class="card-body">
+                                <span class="card-name">Quần jean nữ - </span>
+                                <span class="card-type">KO0003</span>
+                            </div>
+                            <div class="price">
+                                <span class="newPrice">160.000VND</span>
+                                <span class="oldPrice">170.000VND</span>
+                            </div>
+                            <button class="card-buy">Đặt Mua</button>
+                        </div>
+                        <div class="card-hold">
+                            <img src="./images/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg" alt="">
+                            <div class="card-body">
+                                <span class="card-name">Quần jean nữ - </span>
+                                <span class="card-type">KO0004</span>
+                            </div>
+                            <div class="price">
+                                <span class="newPrice">60.000VND</span>
+                                <span class="oldPrice">170.000VND</span>
+                            </div>
+                            <button class="card-buy">Đặt Mua</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="icon">
+                <ul class="icon-list">
+                    <li class="icon-item">
+                        <a class="wrap-icon" href=""><i class="fa-solid fa-house icon-padd"></i></a>
+                    </li>
+                    <li class="icon-item">
+                        <a class="wrap-icon" href=""><i class="fa-brands fa-facebook icon-padd"></i></a>
+                    </li>
+                    <li class="icon-item">
+                        <a class="wrap-icon" href=""><i class="fa-brands fa-twitter icon-padd"></i></a>
+                    </li>
+                    <li class="icon-item">
+                        <a class="wrap-icon" href=""><i class="fa-brands fa-instagram icon-padd"></i></a>
+                    </li>
+                    <li class="icon-item">
+                        <a class="wrap-icon" href=""><i class="fa-brands fa-tiktok icon-padd"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-last-wrapp">
+                <ul class="nav-list">
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item">News</li>
+                    <li class="nav-item">About</li>
+                    <li class="nav-item">Contact Us</li>
+                    <li class="nav-item">Our Team</li>
+                </ul>
+            </div>
+            <div class="foot-text">
+                <p class="foot-copyRight">Copyright&copy;2024: Designed by GroupQT</p>
+            </div>
+    </footer>
+    </div>
+    <script src="./modi.js"></script>
+</body>
+</html>
+
